@@ -104,7 +104,8 @@ public class SignUpActivity extends AppCompatActivity {
 
                     Toast.makeText(SignUpActivity.this, "Signup Successful", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
-                    startActivity(new Intent(SignUpActivity.this, HomeFragment.class));
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(SignUpActivity.this, "Signup Failed", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
